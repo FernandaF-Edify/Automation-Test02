@@ -1,0 +1,22 @@
+{
+  "name": "automationtest02",
+  "version": "0.1.1",
+  "description": "WebdriverIO test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandaF-Edify/Automation-Test02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandaF-Edify/Automation-Test02/issues"
+  },
+  "homepage": "https://github.com/FernandaF-Edify/Automation-Test02#readme",
+  "devDependencies": {
+    "mocha": "^8.1.1"
+  }
+}
