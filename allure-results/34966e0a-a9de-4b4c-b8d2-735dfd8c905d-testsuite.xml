@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598239019170' stop='1598239036270'>
+    <name>Login tests</name>
+    <title>Login tests</title>
+    <test-cases>
+        <test-case start='1598239019171' status='broken' stop='1598239036269'>
+            <name>should go to the register page and validate url</name>
+            <title>should go to the register page and validate url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-19.6.0'/>
+            </parameters>
+            <steps>
+                <step start='1598239019175' status='broken' stop='1598239036269'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4a441da5-47e3-4e7d-8d15-0dae10fde29f-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps>
+                        <step start='1598239036239' status='broken' stop='1598239036269'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Browsing context has been discarded</message>
+                <stack-trace>no such window: Browsing context has been discarded
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/example.e2e.js:7:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

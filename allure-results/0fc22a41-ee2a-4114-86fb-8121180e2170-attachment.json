@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "#landingPage > div.LandingPagecommonstyled__LandingPageHead-sc-11hh700-0.bVGoOS > div.LandingPagecommonstyled__LandingPageHeadContent-sc-11hh700-1.gjILzx > div:nth-child(2) > div > div.FormWrapperstyled__StyledSearchFormWrapper-sc-1mbkv3y-0.fIYBuk > div.FormWrapperstyled__SearchFormContainer-sc-1mbkv3y-1.fCjTmU > div.PlacePickerTipWrapstyled__PlacePickerTipWrap-sc-1pvdrb3-0.fwztdk > div.SearchFieldstyled__SearchField-apind7-0.lenXMz > div > div.SearchFieldstyled__SearchFieldWrapper-apind7-1.ePSnfb > div.SearchFieldstyled__SearchFieldInputWrapper-apind7-2.liPCmA > div > input"
+}

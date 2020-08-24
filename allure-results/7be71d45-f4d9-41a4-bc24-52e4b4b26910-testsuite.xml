@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598237700006' stop='1598237705227'>
+    <name>Login tests</name>
+    <title>Login tests</title>
+    <test-cases>
+        <test-case start='1598237700006' status='broken' stop='1598237705226'>
+            <name>should go to the register page and validate url</name>
+            <title>should go to the register page and validate url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598237700010' status='passed' stop='1598237704116'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e62f5d93-fee4-4bd6-b9fa-2ab19f8d2645-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237704119' status='passed' stop='1598237704260'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='e57ce524-2a9a-4a2e-a5a5-7c61a2759cba-attachment.json' type='application/json' size='39'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237704264' status='passed' stop='1598237704295'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f2f699e6-4c60-4e69-b861-9558e3178686-attachment.json' type='application/json' size='79'/>
+                        <attachment title='Response' source='7d0ca700-b0e2-46e6-9358-5e495e98d3cf-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237704300' status='passed' stop='1598237704317'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='a0b8c3fa-37f9-45d1-9631-d33cb1abebec-attachment.json' type='application/json' size='84'/>
+                        <attachment title='Response' source='18854aca-1fdb-445d-aa4a-2fe4aee8e727-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237704320' status='broken' stop='1598237705226'>
+                    <name>POST /session/:sessionId/element/d5a6aecb-018e-4696-8c36-1b767f2e6b38/clear</name>
+                    <title>POST /session/:sessionId/element/d5a6aecb-018e-4696-8c36-1b767f2e6b38/clear</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1598237704372' status='passed' stop='1598237705225'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='2c622956-40be-4e1f-a641-952515554adb-attachment.png' type='image/png' size='924101'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid element state
+                  (Session info: chrome=84.0.4147.135)</message>
+                <stack-trace>invalid element state
+                  (Session info: chrome=84.0.4147.135)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/example.e2e.js:13:27)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

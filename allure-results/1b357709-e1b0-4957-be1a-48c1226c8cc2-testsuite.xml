@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598239017767' stop='1598239023757'>
+    <name>Login tests</name>
+    <title>Login tests</title>
+    <test-cases>
+        <test-case start='1598239017768' status='broken' stop='1598239023756'>
+            <name>should go to the register page and validate url</name>
+            <title>should go to the register page and validate url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598239017772' status='passed' stop='1598239022608'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='1d6e1744-252d-4856-93ee-66902c96785f-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598239022610' status='passed' stop='1598239022620'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='d8e8513a-7a75-43c2-9c18-a5b971daaadd-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598239022623' status='broken' stop='1598239023756'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='6e7eb6ac-ecd7-40e9-876d-b397f0f76778-attachment.json' type='application/json' size='108'/>
+                    </attachments>
+                    <steps>
+                        <step start='1598239022687' status='passed' stop='1598239023755'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='49f1aabf-7e63-4755-bd9d-5d4b7071bc1d-attachment.png' type='image/png' size='978034'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: An invalid or illegal selector was specified
+                  (Session info: chrome=84.0.4147.135)</message>
+                <stack-trace>invalid selector: An invalid or illegal selector was specified
+                  (Session info: chrome=84.0.4147.135)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at global.$ (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/node_modules/@wdio/runner/build/index.js:189:36)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/example.e2e.js:10:33)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

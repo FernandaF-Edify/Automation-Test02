@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598237761079' stop='1598237777454'>
+    <name>Login tests</name>
+    <title>Login tests</title>
+    <test-cases>
+        <test-case start='1598237761079' status='broken' stop='1598237777453'>
+            <name>should go to the register page and validate url</name>
+            <title>should go to the register page and validate url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-19.6.0'/>
+            </parameters>
+            <steps>
+                <step start='1598237761083' status='passed' stop='1598237776946'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5a3ec515-6c94-4cb3-a439-76695c4eaca5-attachment.json' type='application/json' size='50'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237776949' status='passed' stop='1598237776957'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='55fcf590-71ec-408a-b9f0-ac6b8bdbd61b-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237776960' status='passed' stop='1598237776986'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7916087b-9b1a-4a7e-b45e-c629008b1e14-attachment.json' type='application/json' size='79'/>
+                        <attachment title='Response' source='21bbd6ac-ab32-48c0-95a5-7bc9af9e2899-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237776990' status='passed' stop='1598237776999'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7d358ace-540e-4590-8f74-89e4be63f2d3-attachment.json' type='application/json' size='84'/>
+                        <attachment title='Response' source='152b90fc-e6c7-4f00-9c4e-6ad5975a370e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598237777003' status='broken' stop='1598237777453'>
+                    <name>POST /session/:sessionId/element/c67c4bf3-5037-2a46-94df-2021bd40f62e/clear</name>
+                    <title>POST /session/:sessionId/element/c67c4bf3-5037-2a46-94df-2021bd40f62e/clear</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1598237777032' status='passed' stop='1598237777452'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='96cdec33-656c-41e8-88ef-1af30b80f29c-attachment.png' type='image/png' size='1594760'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Unable to clear element that cannot be edited: &lt;div class="SearchFieldstyled__SearchFieldWrapper-apind7-1 giTtTt"></message>
+                <stack-trace>invalid element state: Unable to clear element that cannot be edited: &lt;div class="SearchFieldstyled__SearchFieldWrapper-apind7-1 giTtTt">
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/example.e2e.js:13:27)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
