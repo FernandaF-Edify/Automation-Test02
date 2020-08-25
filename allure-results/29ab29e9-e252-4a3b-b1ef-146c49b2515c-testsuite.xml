@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598325741488' stop='1598325754169'>
+    <name>Automation Test - Module 2</name>
+    <title>Automation Test - Module 2</title>
+    <test-cases>
+        <test-case start='1598325741489' status='passed' stop='1598325746453'>
+            <name>"before all" hook for "Should search flight with train transport"</name>
+            <title>"before all" hook for "Should search flight with train transport"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598325741493' status='passed' stop='1598325746452'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a43b7fea-1cf3-41a4-891f-3d4e2d8f8bca-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1598325746453' status='passed' stop='1598325749297'>
+            <name>"before all" hook for "Should search flight with train transport"</name>
+            <title>"before all" hook for "Should search flight with train transport"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598325746453' status='passed' stop='1598325749297'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='dbbb869b-0358-4cb0-b667-e16cbee770a9-attachment.json' type='application/json' size='147'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1598325749297' status='broken' stop='1598325754168'>
+            <name>Should search flight with train transport</name>
+            <title>Should search flight with train transport</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598325749299' status='passed' stop='1598325749327'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='010c7fe5-6757-45d5-8c9e-e8335cd0c1a0-attachment.json' type='application/json' size='97'/>
+                        <attachment title='Response' source='91e01251-47dc-4691-baf3-b78f05a00628-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598325749334' status='broken' stop='1598325754168'>
+                    <name>POST /session/:sessionId/element/414750d3-7be4-4a68-8777-2436402c8207/click</name>
+                    <title>POST /session/:sessionId/element/414750d3-7be4-4a68-8777-2436402c8207/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1598325753666' status='passed' stop='1598325754167'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='0c588b8c-fada-4fa9-8568-be7677cbd093-attachment.png' type='image/png' size='297564'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;input data-test="TransportOptionCheckbox-aircraft" data-state="ok" type="checkbox" class="Checkbox__Input-sc-1x6twh3-4 bMCSKS" value="aircraft" checked=""> is not clickable at point (50, 525). Other element would receive the click: &lt;svg class="Icon__StyledIcon-sc-1pnzn3g-0 eTbxni" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">...&lt;/svg>
+                  (Session info: chrome=84.0.4147.135)</message>
+                <stack-trace>element click intercepted: Element &lt;input data-test="TransportOptionCheckbox-aircraft" data-state="ok" type="checkbox" class="Checkbox__Input-sc-1x6twh3-4 bMCSKS" value="aircraft" checked=""> is not clickable at point (50, 525). Other element would receive the click: &lt;svg class="Icon__StyledIcon-sc-1pnzn3g-0 eTbxni" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet">...&lt;/svg>
+                  (Session info: chrome=84.0.4147.135)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at FiltersPage.SelectOnlyBus (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/pageobjects/filters.page.js:22:29)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/example.e2e.js:32:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

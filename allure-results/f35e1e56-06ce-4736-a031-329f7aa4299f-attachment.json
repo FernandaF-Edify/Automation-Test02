@@ -1,5 +1,0 @@
-{
-  "error": "no such element",
-  "message": "Unable to locate element: #landingPage > div.LandingPagecommonstyled__LandingPageHead-sc-11hh700-0.bVGoOS > div.LandingPagecommonstyled__LandingPageHeadContent-sc-11hh700-1.gjILzx > div:nth-child(2) > div > div.FormWrapperstyled__StyledSearchFormWrapper-sc-1mbkv3y-0.fIYBuk > div.FormWrapperstyled__SearchFormContainer-sc-1mbkv3y-1.fCjTmU > div.PlacePickerTipWrapstyled__PlacePickerTipWrap-sc-1pvdrb3-0.fwztdk > div.SearchFieldstyled__SearchField-apind7-0.lenXMz > div > div.SearchFieldstyled__SearchFieldWrapper-apind7-1.ePSnfb > div.SearchFieldstyled__SearchFieldInputWrapper-apind7-2.liPCmA > div > input",
-  "stacktrace": "WebDriverError@chrome://marionette/content/error.js:175:5\nNoSuchElementError@chrome://marionette/content/error.js:387:5\nelement.find/</<@chrome://marionette/content/element.js:330:16\n"
-}
