@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "div[data-test=\"SearchPlaceField-destination\"] input[data-test=\"SearchField-input\"]"
+}
