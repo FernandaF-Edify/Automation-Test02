@@ -1,11 +1,13 @@
 const chaiExpect = require('chai').expect
 const SearchPage = require('../pageobjects/search.page')
 const FiltersPage = require('../pageobjects/filters.page')
+const BookFlightPage = require('../pageobjects/bookFlight.page')
 
 describe('Automation Test - Module 2', () => {
 
     before(()=>{
         SearchPage.open();
+        browser.maximizeWindow()
     })
 
     it('Should select a flight from TXL to London', ()=> {
@@ -25,15 +27,34 @@ describe('Automation Test - Module 2', () => {
     })
 
     before(()=>{
+        browser.maximizeWindow();
         FiltersPage.open();
     })
 
-    it.only ('Should search flight with train transport', ()=> {
+    it ('Should search flight with train transport', ()=> {
         FiltersPage.SelectOnlyBus();
         FiltersPage.isAnyFlightExist();
-        browser.pause(1000)
+        browser.pause(1000);
         FiltersPage.SelectTrain();
         SearchPage.isFlightOnSearchPage();
-        browser.pause(1000)
+        browser.pause(1000);
     })
+
+    it.only ('Should book a flight to TXL to LONDON', ()=> {
+        BookFlightPage.ClickBookButton();
+        browser.pause(3000);
+        BookFlightPage.isStartBooking();
+        BookFlightPage.FillContactDetails();
+        BookFlightPage.isStartFillPrimaryPassegers();
+        BookFlightPage.FillPrimaryPassenger();
+        BookFlightPage.isVisaRequiremets();
+        
+        BookFlightPage.FillVisaRequirements();
+        browser.pause(1000);
+    })
+
+    after(()=>{
+        browser.closeWindow();
+    })
+
 });
