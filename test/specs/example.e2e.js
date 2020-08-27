@@ -1,7 +1,8 @@
 const chaiExpect = require('chai').expect
 const SearchPage = require('../pageobjects/search.page')
 const FiltersPage = require('../pageobjects/filters.page')
-const BookFlightPage = require('../pageobjects/bookFlight.page')
+const BookFlightPage = require('../pageobjects/bookFlight.page');
+const { assert } = require('chai');
 
 describe('Automation Test - Module 2', () => {
 
@@ -41,16 +42,29 @@ describe('Automation Test - Module 2', () => {
     })
 
     it.only ('Should book a flight to TXL to LONDON', ()=> {
-        BookFlightPage.ClickBookButton();
-        browser.pause(3000);
-        BookFlightPage.isStartBooking();
+        BookFlightPage.btnBook.click();
+        BookFlightPage.title.waitForExist();
+        chaiExpect(BookFlightPage.isStartBooking()).to.be.true;
         BookFlightPage.FillContactDetails();
-        BookFlightPage.isStartFillPrimaryPassegers();
+
+        flightFirstNameDetails = BookFlightPage.fillFirstName.getAttribute('value');
+        flightFirstLastDetails = BookFlightPage.fillLastName.getAttribute('value');
+
+        chaiExpect(BookFlightPage.isStartFillPrimaryPassegers()).to.be.true;
         BookFlightPage.FillPrimaryPassenger();
-        BookFlightPage.isVisaRequiremets();
+        chaiExpect(BookFlightPage.isVisaRequiremets()).to.be.true;
         
         BookFlightPage.FillVisaRequirements();
-        browser.pause(1000);
+        BookFlightPage.btnContinue.click();
+        BookFlightPage.btnStandardType.click();
+        BookFlightPage.btnPackagesPremium.click();
+        BookFlightPage.btnSelectWindow.click();
+        BookFlightPage.btnStepControlNxt.click();
+
+        BookFlightPage.emailDetails.isEqual('Ms' + flightFirstNameDetails + flightFirstLastDetails);
+
+        expect(browser).toHaveUrlContaining('/booking?');
+        
     })
 
     after(()=>{
