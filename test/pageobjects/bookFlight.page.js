@@ -7,7 +7,7 @@ class BookFlightPage extends Page {
 
     constructor(){
         super()
-        this.pageUrl = '/landing/-/-';
+        this.pageUrl = '/search/results/berlin-tegel-berlin-germany/london-united-kingdom/2020-10-01_2020-10-31/2020-10-01_2020-10-31';
     }
     /**
      * define selectors using getter methods
@@ -80,16 +80,14 @@ class BookFlightPage extends Page {
 
     isVisaRequiremets(){
         return (
-            $('//span[contains(text(),"Visa requirements check")]').isExisting()
+            $('//span[contains(text(),"Visa requirements check")]').toDisplayed()
             )
     }
 
-    /**
-     * overwrite specifc options to adapt it to page object
-     */
     open () {
         return super.open(this.pageUrl);
     }
+
 }
 
 module.exports = new BookFlightPage();
