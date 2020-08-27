@@ -8,7 +8,7 @@ const { assert } = require('chai');
 describe('Automation Test - Module 2', () => {
         
     it ('Should select a flight from TXL to London', ()=> {
-        SearchPage.open()
+        FlightKeyword.inicializSearchPage()
         SearchPage.FillAirpots()
         SearchPage.SelectPassagers()
         SearchPage.SelectDates()
@@ -20,7 +20,7 @@ describe('Automation Test - Module 2', () => {
     })
 
     it ('Should search flight with train transport', ()=> {
-        FiltersPage.open()
+        FlightKeyword.inicializBookingPage()
         expect(browser).toHaveUrlContaining('/search')
         expect(FlightKeyword.isFlightOnSearchPage())
         FiltersPage.SelectOnlyBus()
@@ -31,7 +31,7 @@ describe('Automation Test - Module 2', () => {
     })
 
     it ('Should book a flight to TXL to LONDON', ()=> {
-        BookFlightPage.open()
+        FlightKeyword.inicializBookingPage()
         BookFlightPage.btnBook.click()
         BookFlightPage.title.waitForExist()
         chaiExpect(BookFlightPage.isStartBooking()).to.be.true
