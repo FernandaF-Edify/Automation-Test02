@@ -22,8 +22,9 @@ exports.config = {
 
     suites: 
         { 
-            test01: ['./test/specs/**/Test01.e2e.js'],
-            test0203: ['./test/specs/**/Test0203.e2e.js'],
+            BookingFlight: ['./test/specs/Booking/BookingFlight.e2e.js'],
+            SearchFlight: ['./test/specs/Search/SearchFlight.e2e.js'],
+            
         },
     // Patterns to exclude.
     exclude: [

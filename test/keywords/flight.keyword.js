@@ -6,7 +6,7 @@ class FlightKeyword {
 
     isFlightOnSearchPage(){
         return (
-            $('div[data-test="WatchdogAndSortingWrapper"]').isDisplayed()
+            $('[data-test="WatchdogAndSortingWrapper"]').isDisplayed()
             )
     }
 

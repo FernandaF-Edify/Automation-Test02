@@ -80,7 +80,7 @@ class BookFlightPage extends Page {
 
     isVisaRequiremets(){
         return (
-            $('//span[contains(text(),"Visa requirements check")]').toDisplayed()
+            $('//span[contains(text(),"Visa requirements check")]').isDisplayed()
             )
     }
 
