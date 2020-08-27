@@ -1,0 +1,140 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1598492544250' stop='1598492550710'>
+    <name>Automation Test - Module 2</name>
+    <title>Automation Test - Module 2</title>
+    <test-cases>
+        <test-case start='1598492544251' status='passed' stop='1598492548279'>
+            <name>"before all" hook for "Should book a flight to TXL to LONDON"</name>
+            <title>"before all" hook for "Should book a flight to TXL to LONDON"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598492544255' status='passed' stop='1598492548110'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4dc16907-70dc-4790-aa92-11a8190a453e-attachment.json' type='application/json' size='47'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598492548110' status='passed' stop='1598492548278'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='47c6cfd9-1f29-4e3c-9009-073942c6bf3a-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1598492548279' status='passed' stop='1598492550562'>
+            <name>"before all" hook for "Should book a flight to TXL to LONDON"</name>
+            <title>"before all" hook for "Should book a flight to TXL to LONDON"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598492548279' status='passed' stop='1598492548438'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='5ae30106-6d4d-4353-9ae5-578a8509a6e6-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1598492548439' status='passed' stop='1598492550562'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='969f0f59-d1b2-4edf-92bf-3e0ed8d59fd0-attachment.json' type='application/json' size='144'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1598492550563' status='broken' stop='1598492550690'>
+            <name>Should book a flight to TXL to LONDON</name>
+            <title>Should book a flight to TXL to LONDON</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598492550566' status='broken' stop='1598492550690'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='b7964f22-51c0-470b-ba0a-717db693d661-attachment.json' type='application/json' size='70'/>
+                    </attachments>
+                    <steps>
+                        <step start='1598492550649' status='broken' stop='1598492550690'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: window was already closed
+                  (Session info: chrome=84.0.4147.135)</message>
+                <stack-trace>no such window: window was already closed
+                  (Session info: chrome=84.0.4147.135)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at global.$ (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/node_modules/@wdio/runner/build/index.js:189:36)
+                    at BookFlightPage.get btnBook [as btnBook] (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/pageobjects/bookFlight.page.js:18:29)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/TestScenarios.e2e.js:45:24)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1598492550690' status='broken' stop='1598492550710'>
+            <name>"after all" hook for "Should book a flight to TXL to LONDON"</name>
+            <title>"after all" hook for "Should book a flight to TXL to LONDON"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1598492550691' status='broken' stop='1598492550710'>
+                    <name>DELETE /session/:sessionId/window</name>
+                    <title>DELETE /session/:sessionId/window</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=84.0.4147.135)</message>
+                <stack-trace>no such window: target window already closed
+                from unknown error: web view not found
+                  (Session info: chrome=84.0.4147.135)
+                    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+                    at Context.&lt;anonymous> (/Users/mfernandez/Documents/AutomationTestM02/Automation-Test02/test/specs/TestScenarios.e2e.js:71:17)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

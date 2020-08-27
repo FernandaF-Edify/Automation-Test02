@@ -19,6 +19,11 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+
+    suites: 
+        { 
+            test: ['./test/specs/**/TestScenarios.e2e.js'],
+        },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
