@@ -28,9 +28,9 @@ class SearchPage extends Page {
     get nextMonth() {return $('[data-test="CalendarMoveNextButton"]')}
     get departureDate () { return $('[data-value="2020-09-01"]')}
     get returnDate () { return $('[data-value="2020-09-15"]')}
-    get btnSetDates() {$('#library > div.SearchFormstyled__StyledSearchForm-sc-447g91-0.drtsxf.SearchForm > div > span > div.FormWrapperstyled__StyledSearchFormWrapper-sc-1mbkv3y-0.fIYBuk > div.FormWrapperstyled__SearchFormContainer-sc-1mbkv3y-1.fCjTmU > div:nth-child(5) > div.ClickCheck > div > span > div > div.FooterBarstyled__Footer-sc-1fnzjcn-0.fJqDLy > div.Stack__StyledStack-sc-1t576ow-0.jbBnTm > button.ButtonPrimitive__StyledButtonPrimitive-q2qrvj-0.fQZUGX')}
+    get btnSetDates() { return $('[data-test="SearchFormDoneButton"]')}
 
-    get btnsearch(){$('a[data-test="SearchButton"]')}
+    get btnsearch(){ return $('[data-test="LandingSearchButton"]')}
 
 
     FillAirpots () {
@@ -51,11 +51,10 @@ class SearchPage extends Page {
     }
 
     SelectDates (){
-        this.searchDateInput.click();
-        this.departureDate.click();
-        this.returnDate.click();
-        this.nextMonth.click();
-        
+        this.searchDateInput.click()
+        this.nextMonth.click()
+        this.departureDate.click()
+        this.returnDate.click() 
     }
 
     isFlightOnSearchPage(){

@@ -5,23 +5,10 @@ const BookFlightPage = require('../pageobjects/bookFlight.page');
 const FlightKeyword = require('../keywords/flight.keyword');
 const { assert } = require('chai');
 
-describe('Automation Test - Module 2 - Test  01 - 02 - 03', () => {
+describe('Automation Test - Module 2 - Test 02 - 03', () => {
 
-    
     before (()=>{
-        FlightKeyword.inicializSearchPage();
-    })
-    
-    it.only('Should select a flight from TXL to London', ()=> {
-        SearchPage.FillAirpots();
-        SearchPage.SelectPassagers();
-        SearchPage.SelectDates();
-        SearchPage.btnSetDates.click();
-        SearchPage.btnsearch.click();
-        SearchPage.SearchButtonClick();
-        expect(FlightKeyword.isFlightOnSearchPage());
-        expect(browser).toHaveUrl(`?adults=2&children=0&infants=1`, { message: 'No funciono' , containing : true , wait: '10000', interval: 1000})
-    
+        FlightKeyword.inicializBookingPage();
     })
 
     it ('Should search flight with train transport', ()=> {
@@ -64,4 +51,4 @@ describe('Automation Test - Module 2 - Test  01 - 02 - 03', () => {
         browser.closeWindow();
     })
 
-});
+})

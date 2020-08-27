@@ -22,7 +22,8 @@ exports.config = {
 
     suites: 
         { 
-            test: ['./test/specs/**/TestScenarios.e2e.js'],
+            test01: ['./test/specs/**/Test01.e2e.js'],
+            test0203: ['./test/specs/**/Test0203.e2e.js'],
         },
     // Patterns to exclude.
     exclude: [
